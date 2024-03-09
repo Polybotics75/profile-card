@@ -1,0 +1,140 @@
+*,
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root{
+  --blue: #0000FF;
+  --black: #212121;
+  --white: #FAFAFA;
+  --gray: #E5E5E5;
+}
+
+body{
+  background: var(--gray);
+  font-family: Arial,sans-serif, monospace; 
+  color: var(--black);
+}
+
+.profileCard{
+  background: var(--white);
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+} 
+
+.cardTop{
+  width: 100%;
+  height: 100px;
+  background: var(--blue);
+}
+
+.cardBottom{
+  padding: 15px 10px;
+}
+
+.profileImgCont{
+  display: flex;
+  justify-content: center;
+}
+.profileImg{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+  overflow: hidden;
+  background: var(--gray);
+  margin-top: -80px;
+}
+.profileImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userDetails{
+  margin-top: 15px; 
+  text-align: center;
+}
+.userName{
+  font-size: 20px;
+  font-weight: 800;
+}
+.userTag{
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 3px;
+}
+
+.actionButtonCont{
+  width: 100%;
+  padding: 25px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.actionButton{
+  width: calc((100% - 10px)/2);
+  height: 48px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.actionButton.primary{
+  background: var(--blue);
+  color: var(--white);
+}
+
+.divider{
+  height: 0.3px;
+  width: 100%;
+  border: 0;
+  background: var(--gray);
+  margin: 10px 0;
+}
+
+.socialIconCont{
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.socialIcon{
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  border-radius: 40px;
+  background: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.socialIcon#facebook{
+  background: #1877F2;
+}
+.socialIcon#instagram{
+  background: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+}
+.socialIcon#github{
+  background: radial-gradient(#2b3137 60%, #2dba4e 5%);
+}
+.socialIcon#google{
+  background: linear-gradient(to bottom right, #4285F4 60%, #EA4335 15%);
+}
